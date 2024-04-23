@@ -11,7 +11,10 @@
   margin: auto;
   margin-bottom: 30px;
 }
-
+.header{
+  width: 80%;
+  margin: auto;
+}
 .point-section {
   display: flex;
   justify-content: center;
@@ -97,5 +100,9 @@
 @media only screen and (max-width: 600px) {
   .months {
     font-size: 12px;
+  }
+  .bar-chart-container, .header{
+    width: 100%;
+    padding: 0px 10px;
   }
 }
