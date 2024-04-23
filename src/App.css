@@ -70,7 +70,6 @@
 .bars-container {
   display: flex;
   width: 100%;
-  padding-left: 20px;
   justify-content: space-around;
 }
 
@@ -80,4 +79,23 @@
 }
 .profit-bar{
   background-color: red;
+}
+.months-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+.months{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(150%);
+  text-align: center;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .months {
+    font-size: 12px;
+  }
 }

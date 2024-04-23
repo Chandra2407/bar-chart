@@ -54,19 +54,34 @@ const BarChart = ({ data }) => {
                             {
                                 data?.data?.map(bar => {
                                     return (
-                                        <div className="bars"
-                                            style={{
-                                                width: Number(barWidth / (data?.data?.length * 2)),
-                                                height:Number(bar?.sales / 100)
-                                            }}
-                                        >
-                                            <div className='profit-bar' 
-                                            style={{
-                                                height:Number(bar?.profit / 100)
-                                            }}
+                                        <>
+                                            <div className="bars"
+                                                style={{
+                                                    width: Number(barWidth / (data?.data?.length * 2)),
+                                                    height: Number(bar?.sales / 100)
+                                                }}
                                             >
+                                                <div className='profit-bar'
+                                                    style={{
+                                                        height: Number(bar?.profit / 100)
+                                                    }}
+                                                >
+                                                </div>
+                                                <div className="months">
+                                                    <p>{bar.month}</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </>
+
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className="months-container">
+                            {
+                                data?.data?.map(month => {
+                                    return (
+                                        <></>
                                     )
                                 })
                             }
