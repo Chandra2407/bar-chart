@@ -68,7 +68,7 @@ const BarChart = ({ data }) => {
                                                 >
                                                 </div>
                                                 <div className="months">
-                                                    <p>{bar.month}</p>
+                                                    <p>{window.screen.width <= 600 ? bar?.month?.substr(0,3) : bar.month}</p>
                                                 </div>
                                             </div>
                                         </>
