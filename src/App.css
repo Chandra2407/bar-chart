@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 20px;
+}
+
+.bar-chart-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.point-section {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.marker {
+  width: 15px;
+  height: 15px;
+}
+
+.marker.profit {
+  background-color: red;
+}
+
+.marker.sales {
+  background-color: rgb(19, 103, 231);
+}
+
+.chart-section {
+  margin-top: 10px;
+}
+
+.y-axis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 100px;
+}
+
+.axis-number {
+  width: 10%;
+  text-align: right;
+}
+
+.line {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.523);
+  height: 1px;
+}
+
+.line.last {
+  background-color: black;
+  position: relative;
+}
+
+.bars-container {
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+  justify-content: space-around;
+}
+
+.bars {
+  background-color: rgb(19, 103, 231);
+  transform: translateY(-100%);
+}
+.profit-bar{
+  background-color: red;
 }
