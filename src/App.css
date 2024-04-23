@@ -47,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
   height: 100px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .line {
-  width: 100%;
+  width: 80%;
   background-color: rgba(128, 128, 128, 0.523);
   height: 1px;
 }
