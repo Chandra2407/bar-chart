@@ -8,10 +8,6 @@ function App() {
 
   useEffect(() => {
       setSize(window.screen.width)
-    // window.addEventListener('resize', resize)
-    // return () => {
-    //   window.removeEventListener('resize', resize)
-    // }
     console.log(window.screen.width,size)
   }, [window.screen.width])
 
