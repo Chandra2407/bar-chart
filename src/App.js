@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
       setSize(window.screen.width)
     console.log(window.screen.width,size)
-  }, [window.screen.width,size])
+  }, [size])
 
   return (
     <div className="App">
