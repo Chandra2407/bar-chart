@@ -12,7 +12,7 @@ const BarChart = ({ data }) => {
     useEffect(() => {
         console.log('width', chartWidthref.current ? chartWidthref.current.offsetWidth : 0);
         setBarWidth(chartWidthref.current ? chartWidthref.current.offsetWidth : 0)
-    }, [chartWidthref.current]);
+    }, [barWidth]);
 
     return (
         <div className='bar-chart-container'>
